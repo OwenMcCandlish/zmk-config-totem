@@ -32,6 +32,11 @@
   tapping-term-ms = <225>;
 };
 
+&lt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>; // This enables the "tap-then-hold" repeat
+};
+
 / {
      combos {
             compatible = "zmk,combos";
@@ -98,7 +103,7 @@ label= "NUM"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃     7     ┃     8     ┃     9     ┃     /     ┃   ┃   PgUp    ┃   PgDown  ┃   Home    ┃    End    ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     .     ┃     4     ┃     5     ┃     6     ┃     -     ┃   ┃   LEFT    ┃    UP     ┃   DOWN    ┃    RIGHT  ┃           ┃
+//             ┃     .     ┃     4     ┃     5     ┃     6     ┃     -     ┃   ┃   LEFT    ┃    DOWN   ┃    UP     ┃    RIGHT  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃     1     ┃     2     ┃     3     ┃     +     ┃   ┃   COPY    ┃    PASTE  ┃   CUT     ┃    UNDO   ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -108,7 +113,7 @@ label= "NUM"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp UNDER   &kp N7      &kp N8      &kp N9      &kp FSLH        &kp PG_UP   &kp PG_DN   &kp HOME    &kp END     &trans
-                &kp DOT     &kp N4      &kp N5      &kp N6      &kp MINUS       &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &trans
+                &kp DOT     &kp N4      &kp N5      &kp N6      &kp MINUS       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
     &trans      &trans      &kp N1      &kp N2      &kp N3      &kp PLUS        &kp K_COPY  &kp K_PASTE &kp K_CUT   &kp K_UNDO  &trans      &trans
                                         &kp N0      &trans      &trans          &trans      &trans      &trans
                         >;
