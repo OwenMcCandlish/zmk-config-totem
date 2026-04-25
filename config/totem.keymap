@@ -138,7 +138,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp GRAVE   &kp CARET   &kp DOLLAR  &kp TILDE   &kp BSLH        &kp AMPS    &kp SEMI    &kp LBRC    &kp RBRC    &kp PERCENT
+                &kp GRAVE   &kp CARET   &kp DOLLAR  &kp TILDE   &kp BSLH        &kp AMPS    &kp SEMI    &kp LBKT    &kp RBKT    &kp PERCENT
                 &kp EXCL    &kp MINUS   &kp PLUS    &kp EQUAL   &kp HASH        &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp UNDER
     &trans      &trans      &kp FSLH    &kp ASTRK   &kp AT      &trans          &trans      &kp QMARK   &kp LBRC    &kp RBRC    &trans      &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans
